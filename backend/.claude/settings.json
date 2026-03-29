@@ -1,7 +1,7 @@
 {
   "permissions": {
     "additionalDirectories": [
-      "/home/essam/work/clinical-backend/drug-interaction-checker/app"
+      "/home/essam/work/clinical-ai-companion/backend/app"
     ],
     "allow": [
       "Bash(python -m py_compile app/database/base.py app/auth/models.py app/auth/schemas.py app/auth/service.py app/auth/router.py app/api/schemas.py app/api/router.py app/patients/__init__.py app/patients/models.py app/patients/schemas.py app/patients/service.py app/patients/router.py app/main.py tests/test_patients.py)"

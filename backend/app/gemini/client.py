@@ -59,7 +59,7 @@ class GeminiClient:
     def __init__(self) -> None:
         genai.configure(api_key=settings.GEMINI_API_KEY)
         self._model = genai.GenerativeModel(
-            model_name="gemini-2.0-flash",
+            model_name="gemini-2.5-flash",
             generation_config=genai.types.GenerationConfig(
                 temperature=0.2,
                 response_mime_type="application/json",

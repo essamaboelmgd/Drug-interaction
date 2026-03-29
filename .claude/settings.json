@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(source venv/bin/activate)",
+      "Bash(python -c \"from app.main import app; print\\(''Import OK''\\)\")",
+      "Bash(pip show:*)",
+      "Bash(pip install:*)",
+      "Bash(timeout 8 uvicorn app.main:app --reload)"
+    ]
+  }
+}

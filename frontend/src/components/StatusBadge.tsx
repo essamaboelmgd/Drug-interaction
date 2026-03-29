@@ -1,4 +1,4 @@
-import type { PatientStatus } from "@/lib/dummy-data";
+import type { PatientStatus } from "@/services/api";
 import { cn } from "@/lib/utils";
 
 const statusConfig: Record<PatientStatus, string> = {

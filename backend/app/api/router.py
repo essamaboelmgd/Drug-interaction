@@ -61,9 +61,9 @@ async def check_interaction(
             db, current_user.id, body.drug_1, body.drug_2,
             result_json=None, patient_id=body.patient_id,
         )
-        return ErrorResponse(
-            error=ErrorDetail(code=exc.code, message="Failed to analyze drug interaction"),
-            timestamp=now,
+        raise HTTPException(
+            status_code=502,
+            detail="AI service temporarily unavailable. Please try again later.",
         )
 
     await _save_history(

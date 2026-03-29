@@ -19,6 +19,10 @@ from app.database.base import Base
 from app.database.session import engine
 from app.gemini.client import GeminiServiceError
 
+# Ensure all ORM models are imported so Base.metadata knows every table.
+from app.auth.models import User, QueryHistory  # noqa: F401
+from app.patients.models import Patient  # noqa: F401
+
 # ---------------------------------------------------------------------------
 # Logging
 # ---------------------------------------------------------------------------
